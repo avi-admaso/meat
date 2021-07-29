@@ -48,7 +48,8 @@ h1 {
 
   #forms {
     padding: 4%;
-    width: 25%;height: 25%;
+    width: 25%;
+    height: 25%;
     background-color: rgb(187, 187, 187);
     margin-top: 4%;
     border: solid;
@@ -73,7 +74,7 @@ h2 {
 #text {
   position: absolute;
 margin-top: 2%;
-  font-size: 24px;
+  font-size: 30px;
   text-align: justify;
   font-weight: bold;
   color: rgb(0, 0, 0);
@@ -164,12 +165,13 @@ filter: brightness(140%);
 
 }
 .card{
-  transition:2s ease-in-out;
+  transition:1s ease-in-out;
 }
 .card :hover{
   
   filter: brightness(140%);
   transform: scale(1.2);
+  transition:2s ease-in-out;
   
 }
 .slide {
