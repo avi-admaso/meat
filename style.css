@@ -1,0 +1,259 @@
+*{
+  border: 0; margin: 0; box-sizing: border-box;
+}
+.background {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -900;
+  /* opacity: 0.6; */
+  
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #241d1d;
+}
+
+h1 {
+  font-family: "Vollkorn SC", serif;
+  font-size: 70px;
+  color: rgb(255, 255, 255);
+  text-decoration-line: underline;
+  background-color: rgb(0, 0, 0);
+ 
+}
+
+  #forms {
+    padding: 4%;
+    width: 25%;height: 25%;
+    background-color: rgb(187, 187, 187);
+    margin-top: 4%;
+    border: solid;
+    
+  }
+  
+  
+
+
+h2 {
+  font-family: "Vollkorn SC", serif;
+  font-size: 55px;
+  color: rgb(255, 255, 255);
+  text-decoration-line: underline;
+  background-color: rgb(0, 0, 0);
+}
+#kereshe {
+  width: 100%;
+  height: 95vh;
+  position: relative;
+}
+#text {
+  position: absolute;
+margin-top: 2%;
+  font-size: 24px;
+  text-align: justify;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  padding: 7px;
+  
+}
+
+#kereshe img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0%;
+  border-radius: 10%;
+  filter: brightness(130%);
+}
+
+.butcher {
+  
+  border-radius: 10%;
+  width: 90%;
+}
+.butcher p{
+  z-index: 1; width: 80%;
+  background-color: #ffffffa9;
+  position: relative;
+  left: 8%;
+  
+;}
+
+.fling-minislide img {
+  width: 30%;
+  height: 30%;
+}
+h3 {
+  font-family: "Vollkorn SC", serif;
+  font-size: 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+}
+
+section div {
+  width: 28%;
+  height: 60%;
+  border-style: double;
+  border-width: 2px;
+  border-color: rgb(37, 37, 37);
+
+  border-radius: 10%;
+}
+
+.service {
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-around;
+  border-radius: 10%;
+}
+.service img {
+  width: 100%;
+  height: 100%;
+  box-shadow: 5px 5px 10px whitesmoke;  
+}
+.service p {
+  height: 40%;
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  
+  color: rgb(0, 0, 0);
+  font-size: 150%;
+  
+  border: solid;
+  
+}
+#forms h4 {
+  font-size: 30px;
+}
+
+
+
+
+.event :hover{
+  width: 110%;
+  filter: brightness(140%);
+  
+}
+.resturant :hover{
+  width: 110%;
+filter: brightness(140%);
+
+
+}
+.card{
+  transition:2s ease-in-out;
+}
+.card :hover{
+  
+  filter: brightness(140%);
+  transform: scale(1.2);
+  
+}
+.slide {
+         width: 90vw;
+         height: 70vh;
+         display: flex;
+         text-align: center;
+         overflow: hidden;
+         margin-right: 400%;
+         margin-left: 5%;
+     }
+     .slide .slidePic {
+         width: 100%;
+         height: 100%;
+         flex-shrink: 0;
+         animation: sideToSide 20s alternate infinite;         
+
+
+     }
+     .slide .slidePic img {
+         width: 90%;
+         height: 100%;
+         opacity: 0.7;
+     }
+     @keyframes sideToSide {
+         0% { transform:translateX(0%);}
+        25%{ transform:translateX(-100%);}
+         50% { transform:translateX(-200%);}
+        75% { transform:translateX(-300%);}
+         100% { transform:translateX(-400%) ;}
+     }
+     .copyRight{color: cornsilk;}
+
+     /* @media screen and (min-width:0px) and (max-width:425px){ 
+      #kereshe{
+         filter: opacity(0);
+       }
+
+       .butcher{
+        background-color: white;
+        
+      }
+       
+     } */
+     @media only screen and (max-width: 426px) {
+      #text {
+        font-size: 15px;
+        text-align: justify;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        
+      }
+      #forms{
+        height: 15%;
+      }
+      #forms  form input{
+        width: 80px;
+      }
+      nav li{font-size: 12px;}
+      .service p{
+        font-size: 70%;
+      }
+      }
+    @media only screen and (max-width: 768px) and (min-width: 426px){
+      nav li{font-size: 150%;}
+      #text{
+       font-size: 18px;
+
+      }
+      #forms {
+        width: 35%;
+      }
+    }
+    @media only screen and (max-width: 1024) and (min-width: 769px) {
+      
+      .butcher #text{
+        font-size: 20px; 
+      }
+
+    }
+    #forms input{
+      width: 140px;
+      
+    }
+
+    
